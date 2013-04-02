@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.version     = SmithyAuth::VERSION
   s.authors     = ["Tim Glen"]
   s.email       = ["tim@tag.ca"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of SmithyAuth."
-  s.description = "TODO: Description of SmithyAuth."
+  s.homepage    = "https://github.com/sterrym/smithy-auth"
+  s.summary     = "Provides basic authentication to Smithy CMS"
+  s.description = "Smithy CMS ships with no authentication. This implements a basic has_secure_password in a Smithy::User model"
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
 
