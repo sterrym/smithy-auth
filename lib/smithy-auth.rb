@@ -1,4 +1,2 @@
-require "smithy-auth/engine"
-
-module SmithyAuth
-end
+require 'smithy/auth/engine'
+require 'smithy/authentication_helpers'
