@@ -1,1 +1,1 @@
-Spree.user_class = "Spree::User"
+Smithy.user_class = "Smithy::User"
