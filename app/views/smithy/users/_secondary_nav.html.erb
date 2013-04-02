@@ -1,0 +1,10 @@
+<% content_for :secondary_nav do %>
+  <ul class="nav nav-list">
+    <li class="nav-header">Users</li>
+    <%= render @users %>
+  </ul>
+
+  <div class="btn-group actions pull-right">
+    <%= link_to "<i class=\"icon-plus\"></i> Add User".html_safe, new_user_path, :class => 'btn btn-inverse', :role => 'button' %>
+  </div>
+<% end %>

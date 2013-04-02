@@ -1,0 +1,14 @@
+<% content_for :title, "Users" %>
+
+<div class="hero-unit">
+<%- if @users.empty? -%>
+  <p>Be the first to add a User to your site.</p>
+<% else %>
+  <p>Add a user or select one from your left to edit.</p>
+<% end %>
+  <p>
+    <%= link_to "Add User", new_user_path, :class => 'btn btn-primary btn-large' %>
+  </p>
+</div>
+
+<%= render :partial => "secondary_nav" %>
