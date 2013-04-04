@@ -1,0 +1,5 @@
+require 'capybara/rails'
+require 'capybara/rspec'
+# require 'factory_girl_rails'
+# require 'ffaker'
+require 'shoulda-matchers'
