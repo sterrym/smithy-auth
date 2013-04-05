@@ -3,7 +3,6 @@ module Smithy
     def self.included(receiver)
       receiver.send :helper_method, :current_user
       receiver.send :helper_method, :smithy_current_user
-      receiver.send :helper_method, :smithy_user
       receiver.send :helper_method, :smithy_login_path
       receiver.send :helper_method, :smithy_signup_path
       receiver.send :helper_method, :smithy_logout_path
@@ -14,10 +13,6 @@ module Smithy
     end
 
     def smithy_current_user
-      current_user
-    end
-
-    def smithy_user
       current_user
     end
 
