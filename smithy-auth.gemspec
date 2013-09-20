@@ -13,9 +13,10 @@ Gem::Specification.new do |s|
   s.summary     = "Provides basic authentication to Smithy CMS"
   s.description = "Smithy CMS ships with no authentication. This implements a basic has_secure_password in a Smithy::User model"
 
+  s.required_ruby_version = '>= 1.9.3'
+
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
 
-  s.add_dependency 'rails', '~> 3.2.13'
   s.add_dependency 'bcrypt-ruby', '~> 3.0.0'
   s.add_dependency 'smithy'
 
