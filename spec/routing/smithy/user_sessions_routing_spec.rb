@@ -1,11 +1,17 @@
 require 'spec_helper'
 
-describe "routes to the user sessions controller", :type => :routing do
-  it "routes a named route" do
-    { :get => login_path }.should route_to(:controller => "smithy/user_sessions", :action => "new")
+describe "routes to the user sessions controller" do
+  routes { Smithy::Engine.routes }
+
+  it "routes login to user_sessions#new" do
+    expect(:get => "smithy/login").to route_to( :controller => "smithy/user_sessions", :action => "new" )
   end
 
-  it "routes /smithy/login to the smithy/user_sessions controller" do
-    { :get => "/smithy/login" }.should route_to(:controller => "smithy/user_sessions", :action => "new")
+  it "routes logout to user_sessions#destroy" do
+    expect(:delete => "smithy/logout").to route_to( :controller => "smithy/user_sessions", :action => "destroy" )
+  end
+
+  it "routes a :get => logout to pages" do
+    expect(:get => "smithy/logout").to route_to( :controller => "smithy/pages", :action => "show", :path => "smithy/logout" )
   end
 end
