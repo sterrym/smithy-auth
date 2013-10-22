@@ -1,5 +1,3 @@
-require_dependency "smithy/application_controller"
-
 module Smithy
   class UsersController < ApplicationController
 
