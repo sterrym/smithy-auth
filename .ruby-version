@@ -1,0 +1,4 @@
+1.9.3-p374
+#1.9.2-p320
+#2.0.0-p247 # tools are not ready for ruby 2.0 yet (like debugger!)
+
