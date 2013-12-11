@@ -1,5 +1,5 @@
 module Smithy
-  class UserSessionsController < ApplicationController
+  class UserSessionsController < BaseController
     skip_before_filter :authenticate_smithy_admin, :only => [:new, :create]
 
     def new

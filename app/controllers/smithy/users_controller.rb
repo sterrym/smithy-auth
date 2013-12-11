@@ -1,5 +1,5 @@
 module Smithy
-  class UsersController < ApplicationController
+  class UsersController < BaseController
 
     before_filter :load_users
     respond_to :html, :json
@@ -42,7 +42,7 @@ module Smithy
     end
 
     private
-      def load_templates
+      def load_users
         @users = User.order(:email)
       end
 
