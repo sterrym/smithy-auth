@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = Smithy::Auth::VERSION
   s.authors     = ["Tim Glen"]
   s.email       = ["tim@tag.ca"]
-  s.homepage    = "https://github.com/sterrym/smithy-auth"
+  s.homepage    = "https://github.com/sterrym/smithycms-auth"
   s.summary     = "Provides basic authentication to Smithy CMS"
   s.description = "Smithy CMS ships with no authentication. This implements a basic has_secure_password in a Smithy::User model"
 
