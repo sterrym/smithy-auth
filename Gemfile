@@ -1,7 +1,7 @@
 source "http://rubygems.org"
 
 # load Smithy first so the configuration happens in the right order
-gem 'smithy', :github => 'sterrym/smithy', :branch => 'master'
+gem 'smithycms'
 
 # Declare your gem's dependencies in smithy-auth.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
