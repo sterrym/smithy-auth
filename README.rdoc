@@ -1,3 +1,7 @@
-= SmithyAuth
+= SmithyCMS Auth
 
-This project rocks and uses MIT-LICENSE.
+Smithy CMS ships with no authentication but is able to utilize other authentication/authorization systems. This implements a basic has_secure_password in a Smithy::User model
+
+To roll your own or use an existing auth scheme, you need #smithy_current_user, #smithy_login_path & #smithy_logout_path helper methods (see `authentication_helpers.rb`). You also need to provide the appropriate routes (see `routes.rb`).
+
+Lastly, your User model (whatever it may be) needs to expose a #smithy_admin? method. We leave the implementation details up to you.
