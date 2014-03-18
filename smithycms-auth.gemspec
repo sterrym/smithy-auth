@@ -17,11 +17,11 @@ Gem::Specification.new do |s|
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
 
-  s.add_dependency 'bcrypt-ruby', '~> 3.0.0'
+  s.add_dependency 'bcrypt', '~> 3.1.7'
   s.add_dependency 'smithycms'
 
   s.add_development_dependency 'capybara'
-  s.add_development_dependency 'debugger'
+  s.add_development_dependency 'byebug'
   s.add_development_dependency 'guard-rspec'
   s.add_development_dependency 'guard-spork'
   s.add_development_dependency 'rspec-rails'

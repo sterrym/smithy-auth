@@ -9,12 +9,12 @@ module Smithy
     end
 
     def new
-      @user = User.new(params[:user])
+      @user = User.new(filtered_params)
       respond_with @user
     end
 
     def create
-      @user = User.new(params[:user])
+      @user = User.new(filtered_params)
       @user.save
       flash.notice = "The user was created" if @user.persisted?
       respond_with @user do |format|
@@ -29,7 +29,7 @@ module Smithy
 
     def update
       @user = User.find(params[:id])
-      flash.notice = "The user was saved" if @user.update_attributes(params[:user])
+      flash.notice = "The user was saved" if @user.update_attributes(filtered_params)
       respond_with @user do |format|
         format.html { redirect_to [:edit, @user] }
       end
@@ -42,6 +42,10 @@ module Smithy
     end
 
     private
+      def filtered_params
+        params.fetch(:user, {}).permit( :email, :password, :password_confirmation )
+      end
+
       def load_users
         @users = User.order(:email)
       end

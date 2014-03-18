@@ -1,15 +1,10 @@
-source "http://rubygems.org"
 
-# load Smithy first so the configuration happens in the right order
-gem 'smithycms'
+source "https://rubygems.org"
 
 # Declare your gem's dependencies in smithy-auth.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
 # development dependencies will be added by default to the :development group.
 gemspec
-
-# jquery-rails is used by the dummy application
-gem "jquery-rails"
 
 # Declare any dependencies that are still in development here instead of in
 # your gemspec. These might include edge Rails or gems from your path or
@@ -18,3 +13,8 @@ gem "jquery-rails"
 
 # To use debugger
 # gem 'debugger'
+
+# jquery-rails is used by the dummy application
+gem "jquery-rails"
+
+gem 'smithycms', path: '/Users/tim/projects/smithycms'
