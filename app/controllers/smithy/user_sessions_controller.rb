@@ -27,11 +27,11 @@ module Smithy
       Smithy.log :debug, "[Auth] session[:user_id]: #{session[:user_id].inspect}"
       redirect_to root_url, :notice => "Logged out!"
     end
+
+    private
+      def filtered_params
+        params.fetch(:login, {}).permit( :email, :password )
+      end
+
   end
-
-  private
-    def filtered_params
-      params.fetch(:login, {}).permit( :email, :password )
-    end
-
 end
