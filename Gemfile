@@ -16,5 +16,3 @@ gemspec
 
 # jquery-rails is used by the dummy application
 gem "jquery-rails"
-
-gem 'smithycms', path: '/Users/tim/projects/smithycms'
