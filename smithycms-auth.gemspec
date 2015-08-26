@@ -20,7 +20,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'bcrypt', '~> 3.1.7'
   s.add_dependency 'smithycms'
 
-  s.add_development_dependency 'capybara'
+  # s.add_development_dependency 'capybara'
   s.add_development_dependency 'byebug'
   s.add_development_dependency 'guard-rspec'
   s.add_development_dependency 'guard-spork'
